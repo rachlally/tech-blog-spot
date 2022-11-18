@@ -35,22 +35,22 @@ router.get("/sessions",(req,res)=>{
 
 router.get("/login",(req,res)=>{
     if(req.session.logged_in){
-        return res.redirect("/profile")
+        return res.redirect("/dashboard")
     }
     res.render("login")
 });
 
-router.get("/profile",(req,res)=>{
+router.get("/dashboard",(req,res)=>{
     if(!req.session.logged_in){
         return res.redirect("/login")
     }
     User.findByPk(req.session.user_id,{
-        include:[Project]
+        include:[Post]
     }).then(userData=>{
         const hbsData = userData.toJSON();
         console.log(hbsData)
         hbsData.logged_in=req.session.logged_in
-        res.render("profile",hbsData)
+        res.render("dashboard",hbsData)
     })
 });
 

@@ -1,0 +1,18 @@
+<h1>Welcome back, {{username}}.</h1>
+<h2>Tech Blog Posts</h2>
+{{#each posts}}
+    <div class="card">
+        <a href="/post/{{id}}"><h3>{{title}}</h3></a>
+        <p>{{content}}</p>
+        <button class="delBtn" data-postId="{{id}}">Delete This</button>
+        <hr>
+    </div>
+{{/each}}
+<h2>Add Post</h2>
+<form action="" id="addPost">
+    <input type="text" name="postTitle" id="postTitle" placeholder="postTitle">
+    <input type="text" name="postContent" id="postContent" placeholder="postContent">
+    <button>Add Post!</button>
+</form>
+
+<script src="/js/dashboard.js"> </script>
