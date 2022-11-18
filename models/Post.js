@@ -28,8 +28,8 @@ Post.init({
         reference: {
             model: 'user',
             key: 'id'
-        }
-    }
+        },
+    },
 },{
     sequelize,
 });

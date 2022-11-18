@@ -19,3 +19,21 @@ postForm.addEventListener("submit", e=> {
         }
     })
 })
+
+const delButtons = document.querySelectorAll(".delBtn");
+
+delButtons.forEach(delBtn=>{
+    delBtn.addEventListener("click",e=>{
+        const postId = e.target.getAttribute("data-postid")
+        console.log(postId);
+        fetch(`/api/post/${postId}`,{
+            method:"DELETE"
+        }).then(res=>{
+            if(res.ok){
+                location.reload();
+            } else {
+                alert("trumpet sound")
+            }
+        })
+    })
+})

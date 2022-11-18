@@ -50,8 +50,8 @@ router.get("/dashboard",(req,res)=>{
         const hbsData = userData.toJSON();
         console.log(hbsData)
         hbsData.logged_in=req.session.logged_in
-        res.render("dashboard",hbsData)
+        res.render("dashboard", hbsData)
     })
-});
+})
 
 module.exports = router;
