@@ -1,0 +1,9 @@
+<h1>Homepage</h1>
+<h2>All Posts</h2>
+{{#each posts}}
+    <div class="card">
+        <a href="/post/{{id}}"><h3>{{title}}</h3></a>
+        <p>{{content}}</p>
+        <hr>
+    </div>
+{{/each}}
