@@ -1,16 +1,11 @@
 # Tech Blog Spot
-A CMS-style blog spot to talk tech
+A CMS-style blog spot to write about tech
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+As a new developer, being able to build confidence in programming can be a slow process.  Writing about tech is just another way to grapple with all the new concepts.  Hopefully by creating this site, I will gain confidence learning and writing about tech in order to grow in my new role as a developer.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-
+I learned more about the uses of handlebars for templating a website.  I learned to apply CRUD functionality to a site.  I became more comfortable with routing backend data and front end functionality.  I learned how to deploy a site to Heroku.    
 
 ## Installation
 
@@ -18,24 +13,21 @@ To install, git clone the repo.  Run `npm i` to install all necessary packages. 
 
 ## Usage
 
-The tech blog is viewable at: 
+The tech blog is viewable at: https://tech-blog-lally2022.herokuapp.com/ 
 
 Users must first sign up to create an account.  Once logged in, they can write posts, view all posts, comment, edit, and delete.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![Dashboard](dashboard.png)
+![SinglePost](singlepost.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Thank you to the instructional staff.
 
 ## License
 
+MIT License
 
+Copyright (c) 2022 rachlally
 
 
