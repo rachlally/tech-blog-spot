@@ -21,24 +21,30 @@ router.post('/', async (req, res) => {
 });
 
 //update post
-// router.put('/:id', (req, res) => {
-//   Post.update(
-//     {
-//       title: req.body.title,
-//       content: req.body.content,
-      
-//     },
-//     {
-//       where: {
-//         id: req.params.id,
-//       },
-//     }
-//   )
-//     .then((updatedPost) => {
-//       res.json(updatedPost);
-//     })
-//     .catch((err) => res.json(err));
-// });
+router.put('/:id', async (req, res) => {
+  if(!req.session.logged_in){
+    return res.status(401).json({msg:"hey! login first!"})
+  }
+  try {
+    console.log(req.body);
+    const editRows = await Post.update({
+      title:req.body.title,
+      content:req.body.content,
+     }, {
+      where: {
+        id: req.params.id,
+      },
+    }
+  );
+  if (editRows) {
+    res.status(200).end();
+  } else {
+    res.status(400).end();
+  } 
+} catch (err) {
+    res.status(500).json(err);
+}
+});
 
 //delete post
 router.delete('/:id', async (req, res) => {

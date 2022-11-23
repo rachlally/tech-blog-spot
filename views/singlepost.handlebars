@@ -1,2 +1,17 @@
 <h1>{{title}} by {{User.username}}</h1>
+<p>{{date_created}}</p>
 <h2>{{content}}</h2>
+<button class="editBtn" data-postId="{{id}}">Edit This</button>
+<hr>
+<h2>Add Comment</h2>
+<form action="" id="addComment">
+    <input type="text" name="commentContent" id="commentContent" placeholder="comment">
+    <button>Add Comment!</button>
+</form>
+{{!-- <div class="card">
+    {{#each comment}}
+
+</div> --}}
+<p>{{Comments}}</p>
+
+<script src="/js/singlepost.js"></script>
