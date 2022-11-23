@@ -15,7 +15,7 @@ To install, git clone the repo.  Run `npm i` to install all necessary packages. 
 
 The tech blog is viewable at: https://tech-blog-lally2022.herokuapp.com/ 
 
-Users must first sign up to create an account.  Once logged in, they can write posts, view all posts, comment, edit, and delete.
+Users must first sign up to create an account.  Once logged in, they can view all posts on the Homepage.  Users can navigate to their Dashboard to view all of their posts.  They can also write new posts, comment on other posts, edit exisiting posts, and delete posts.
 
 ![Dashboard](dashboard.png)
 ![SinglePost](singlepost.png)
