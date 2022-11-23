@@ -22,7 +22,7 @@ Users must first sign up to create an account.  Once logged in, they can write p
 
 ## Credits
 
-Thank you to the instructional staff.
+Thank you to the instructional staff at the University of Washington Coding Bootcamp.
 
 ## License
 
